@@ -1,0 +1,50 @@
+.chalet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.chalet-actions .btn {
+  justify-content: center;
+  margin-top: 0;
+  padding: 14px 22px;
+  text-align: center;
+  white-space: normal;
+}
+
+.refresh-page .chalet-actions .chalet-availability-btn {
+  background: var(--ochre);
+  border-color: var(--ochre);
+  color: #fff;
+  box-shadow: 0 12px 26px rgba(24, 48, 43, .14);
+}
+
+.refresh-page .chalet-actions .chalet-availability-btn:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+.refresh-page .chalet-actions .chalet-info-btn {
+  background: transparent;
+  border-color: rgba(24, 48, 43, .35);
+  color: var(--ink);
+}
+
+.refresh-page .chalet-actions .chalet-info-btn:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .chalet-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chalet-actions .btn {
+    width: 100%;
+  }
+}
