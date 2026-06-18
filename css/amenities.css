@@ -1,0 +1,94 @@
+.amenity-card {
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.amenity-card .card-link {
+  pointer-events: none;
+}
+
+.amenity-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 520;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(18px, 4vw, 54px);
+  background: rgba(18, 13, 9, .76);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .22s var(--ease);
+}
+
+.amenity-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.amenity-modal-panel {
+  position: relative;
+  width: min(980px, 96vw);
+  max-height: 88vh;
+  overflow: auto;
+  background: var(--cream);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, .34);
+}
+
+.amenity-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  background: rgba(255, 255, 255, .86);
+  color: var(--dusk);
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.amenity-modal-copy {
+  padding: 34px clamp(22px, 4vw, 48px) 22px;
+}
+
+.amenity-modal-copy h2 {
+  margin: 8px 0 10px;
+  color: var(--dusk);
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+}
+
+.amenity-modal-copy p {
+  max-width: 720px;
+  color: #4a3a28;
+  line-height: 1.7;
+}
+
+.amenity-modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 0 clamp(22px, 4vw, 48px) 42px;
+}
+
+.amenity-modal-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .amenity-modal-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

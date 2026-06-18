@@ -1,0 +1,25 @@
+.functions-page .function-hero .hero-overlay {
+  background: linear-gradient(to bottom, rgba(9, 18, 17, .22), rgba(9, 18, 17, .38) 46%, rgba(9, 18, 17, .78));
+}
+
+.function-intro {
+  background: #f4faee;
+}
+
+.function-experience {
+  background: #edf8e7;
+}
+
+.functions-page .wedding-feature-grid article {
+  min-height: 100%;
+}
+
+.functions-page .wedding-feature-grid img,
+.functions-page .wedding-gallery img,
+.functions-page .wedding-collage img {
+  cursor: zoom-in;
+}
+
+.function-cta {
+  min-height: 390px;
+}
